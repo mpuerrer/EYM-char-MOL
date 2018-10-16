@@ -10,7 +10,7 @@ SRC = EYM_coupled_cmp.cpp EYM_coupled_cmp_dd.cpp
 .cpp.o :
 	$(CXX) $(CXXFLAGS) $(INC) -c $<
 
-.PHONY: all clean depend
+.PHONY: all clean depend test
 
 all: EYM_coupled_cmp 
 
@@ -19,6 +19,9 @@ EYM_coupled_cmp: EYM_coupled_cmp.o
 
 EYM_coupled_cmp_dd: EYM_coupled_cmp_dd.o
 	$(CXX) -o EYM_coupled_cmp_dd EYM_coupled_cmp_dd.o $(LIBS_DD)
+
+test:
+	echo "No tests implemented"
 
 
 clean:
