@@ -12,7 +12,7 @@ SRC = EYM_coupled_cmp.cpp EYM_coupled_cmp_dd.cpp
 
 .PHONY: all clean depend
 
-all: EYM_coupled_cmp EYM_coupled_cmp_dd
+all: EYM_coupled_cmp 
 
 EYM_coupled_cmp: EYM_coupled_cmp.o
 	$(CXX) -o EYM_coupled_cmp EYM_coupled_cmp.o $(LIBS)
