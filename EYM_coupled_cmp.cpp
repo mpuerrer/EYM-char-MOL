@@ -35,6 +35,9 @@
 #include <fstream>
 #include <cassert>
 #include <cstdio>
+#include <cstdlib>
+#include <cstring>
+
 
 typedef enum {YM_FLAT, YM_SS, EYM_COUPLED} SCHEME;
 
@@ -529,7 +532,7 @@ int main(int argc, char* argv[]) {
   double uf;
   SCHEME scheme;
   
-  if (argc != 4 || strcmp(argv[1], "-h") == 0) {
+  if (argc != 4 || std::strcmp(argv[1], "-h") == 0) {
     std::cout << 
     "syntax: EYM_coupled_cmp n uf scheme\n\
     n   ... number of spatial gridpoints\n\

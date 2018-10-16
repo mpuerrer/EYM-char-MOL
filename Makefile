@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -Wall -pedantic -O3 -fomit-frame-pointer
+CXXFLAGS = -Wall -pedantic -O3 -fomit-frame-pointer -std=c++11
 SRC = EYM_coupled_cmp.cpp EYM_coupled_cmp_dd.cpp
 INC = -I/usr/local/include
 LIBS =
