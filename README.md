@@ -6,3 +6,5 @@ I cast the characteristic initial value problem (in Bondi coordinates) in a form
 This code was used to preoduce the results published in M. Pürrer and P. C. Aichelburg, “Tails for the Einstein-Yang-Mills system,” Class. Quant. Grav. 26 (2009) 035004, arXiv:0810.2648 [gr-qc].
 
 
+[![CircleCI](https://circleci.com/gh/mpuerrer/EYM-char-MOL.svg?style=svg)](https://circleci.com/gh/mpuerrer/EYM-char-MOL)
+
